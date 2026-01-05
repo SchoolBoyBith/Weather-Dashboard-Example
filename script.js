@@ -1,7 +1,18 @@
 const input = document.getElementById('city-input');
 const button = document.getElementById('get-weather');
 const output = document.getElementById('weather-output');
-const API_KEY = 'YOUR_API_KEY_HERE';
+const API_KEY = 'cdbe58aaa99a54f441dbed92c94a351e';
+
+async function getWeather() {
+    const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=${API_KEY}&units=imperial`
+    );
+
+    const data = await response.json();
+    console.log(data);
+}
+
+getWeather();
 
 button.addEventListener('click', async () => {
     const city = input.ariaValueMax.trim();
