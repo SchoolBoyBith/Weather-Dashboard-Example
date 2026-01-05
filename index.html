@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Weather Dashboard</h1>
-    <header>
 
-    <main>
-        <input type="text" id="city-input" placeholder="Enter city">
-        <button id="get-weather">Get Weather</button>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
 
-        <div id="weather-output">
-            <p>Enter a city and click "Get Weather"!</p>
-        </div>
-    </main>
+  <main>
+    <div>
+      <input type="text" id="city-input" placeholder="Enter city">
+      <button id="get-weather">Get Weather</button>
+      <button id="clear-weather">Clear</button> <!-- optional clear button -->
+    </div>
 
-    <script src="script.js"></script>
+    <div id="weather-output">
+      <p>Enter a city and click "Get Weather"!</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
