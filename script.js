@@ -33,3 +33,12 @@ button.addEventListener('click', () => {
     if (!city) return;
     getWeather(city);  // Pass the city to the function
 });
+
+// Clear button
+const clearButton = document.getElementById('clear-weather');
+
+clearButton.addEventListener('click', () => {
+    input.value = '';
+    output.innerHTML = '<p>Enter a city and click "Get Weather"!</p>';
+    input.focus();
+});
